@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.colors{
+    background-image: linear-gradient(to left, #0A7BD0, #83ABF5);
+}
+.invalid-input {
+      @apply pointer-events-none cursor-not-allowed opacity-50
+  }
+.text12{
+    @apply text-[18px] font-semibold
+}
+
+.btn-active{
+    background-color: #054DEC;
+    color: white;
+}
+.color{
+    background-color: rgba(0, 0, 0, 0);
+}
+.spinner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.123);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-top-color: #007bff;
+    animation: spin 1s ease-in-out infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .my-button {
+    cursor: pointer;
+    background-color: #054dec;
+    color: white;
+    width: 8rem;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    margin-right: 1rem;
+  }
+  
+  .my-button:hover {
+    background-color: #0c6ae8;
+  }
+  .description {
+    word-wrap: break-word;
+  }
